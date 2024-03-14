@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    
+    <style>
+        /* Resetting default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Styles for Navigation Bar */
+        nav {
+            background-color: #435585;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+            padding-right: 400px;
+        }
+
+        nav a:hover {
+            background-color: #5777a3;
+        }
+
+        /* Styles for Main Content */
+        .container {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .profile-card::before {
+            content: attr(data-card-number);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #00224D;
+            color: #fff;
+            padding: 15px;
+            margin-left: 10px;
+            border-radius: 40px;
+        }
+
+        .profile-card table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .profile-card th, .profile-card td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+            color: #444;
+        }
+
+        .profile-card th {
+            background-color: #435585;
+            color: #fff;
+            font-weight: normal;
+            text-align: right;
+        }
+
+        /* Styles for Footer */
+        footer {
+            background-color: #435585;
+            color: #ffffff;
+            text-align: center;
+            padding: 3px;
+            position: bottom;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <img src="logo.png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="details.html">Student Details</a>
+        <a href="registration.html">Student Registration</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h2>Student Details</h2>
+
+        <!-- Student Profile Cards -->
+        <div class="profile-card" data-card-number="1">
+            <table>
+                <tr>
+                    <th colspan="2">John Doe</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Mr.</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>1995-07-15</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>No.23, Keizer Street, Colombp</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>077-998-9090</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>johndoe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td>Computer Science</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="profile-card" data-card-number="2">
+            <table>
+                <tr>
+                    <th colspan="2">Prineetha Kumar</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Miss.</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>Prineetha</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Kumar</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>1999-01-5</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>No.10, Robert Street, Colombo</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>078-123-2342</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>prineekuar@example.com</td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td>Cyber Security</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="profile-card" data-card-number="3">
+            <table>
+                <tr>
+                    <th colspan="2">Student Details</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Mr.</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>1995-07-15</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123 Main St, City</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>555-123-4567</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td>Computer Science</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="profile-card" data-card-number="4">
+            <table>
+                <tr>
+                    <th colspan="2">Student Details</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Mr.</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>1995-07-15</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123 Main St, City</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>555-123-4567</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td>Computer Science</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="profile-card" data-card-number="5">
+            <table>
+                <tr>
+                    <th colspan="2">Student Details</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Mr.</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>1995-07-15</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123 Main St, City</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>555-123-4567</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td>Computer Science</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="profile-card" data-card-number="6">
+            <table>
+                <tr>
+                    <th colspan="2">Student Details</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Mr.</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>1995-07-15</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123 Main St, City</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>555-123-4567</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td>Computer Science</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="profile-card" data-card-number="7">
+            <table>
+                <tr>
+                    <th colspan="2">Student Details</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Mr.</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>1995-07-15</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123 Main St, City</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>555-123-4567</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td>Computer Science</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="profile-card" data-card-number="8">
+            <table>
+                <tr>
+                    <th colspan="2">Student Details</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Mr.</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>1995-07-15</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123 Main St, City</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>555-123-4567</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td>Computer Science</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="profile-card" data-card-number="10">
+            <table>
+                <tr>
+                    <th colspan="2">Student Details</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Mr.</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>1995-07-15</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123 Main St, City</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>555-123-4567</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td>Computer Science</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="profile-card" data-card-number="11">
+            <table>
+                <tr>
+                    <th colspan="2">Student Details</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Mr.</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>1995-07-15</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123 Main St, City</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>555-123-4567</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td>Computer Science</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="profile-card" data-card-number="12">
+            <table>
+                <tr>
+                    <th colspan="2">Student Details</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Mr.</td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>1995-07-15</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123 Main St, City</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>555-123-4567</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Course Name</td>
+                    <td>Computer Science</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Brilliance Visionary Hub. All rights reserved. | Developed by Aysha Thikra</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Styles for Navigation Bar */
+        nav {
+            background-color: #435585;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #5777a3;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            padding-right: 400px;
+        }
+
+        /* Styles for Footer */
+        footer {
+            background-color: #435585;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Styles for Form */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #435585;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        table tr:last-child {
+            border-bottom: none;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        td label {
+            font-weight: bold;
+            display: inline-block;
+            width: 150px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            width: calc(100% - 160px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label.gender {
+            display: inline-block;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        label.gender input[type="radio"] {
+            display: inline-block;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        input[type="radio"] + label {
+            background-color: #ddd;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: #435585;
+            color: #fff;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #435585;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 48%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #6196A6;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+            }
+            nav a {
+                flex: 1 0 100%;
+                text-align: center;
+            }
+            img {
+                margin-right: auto;
+                margin-left: 0;
+            }
+            nav a:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            form {
+                padding: 15px;
+            }
+            input[type="submit"],
+            input[type="reset"] {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <img src="logo.png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="details.html">Student Details</a>
+        <a href="registration.html">Student Registration</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div>
+        <!-- Student Registration Form -->
+        <h1>Student Registration</h1>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="first_name">First Name:</label></td>
+                    <td><input type="text" id="first_name" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name:</label></td>
+                    <td><input type="text" id="last_name" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <label class="gender" for="male">
+                            <input type="radio" id="male" name="gender" value="male" checked>
+                            Male
+                        </label>
+                        <label class="gender" for="female">
+                            <input type="radio" id="female" name="gender" value="female">
+                            Female
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="text" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="course">Course Name:</label></td>
+                    <td>
+                        <select id="course" name="course" required>
+                            <option value="">Select Course</option>
+                            <option value="computer_science">Computer Science</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="business">Business</option>
+                            <option value="medicine">Medicine</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm_password">Confirm Password:</label></td>
+                    <td><input type="password" id="confirm_password" name="confirm_password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Brilliance Visionary Hub. All rights reserved. | Developed by Aysha Thikra</p>
+    </footer>
+</body>
+</html>

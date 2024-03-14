@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Styles for Navigation Bar */
+        nav {
+            background-color: #435585;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #596f9e;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+        }
+
+        /* Main Content Section */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #435585;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #435585;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            nav {
+                padding: 10px;
+            }
+
+            img {
+                margin-left: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <img src="logo.png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="details.html">Student Details</a>
+        <a href="registration.html">Student Registration</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="blog.html">Blog</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h2>Vision</h2>
+        <p>To become a global leader in providing innovative educational solutions that empower individuals to reach their full potential.</p>
+
+        <h2>Mission</h2>
+        <p>Our mission is to deliver high-quality education, foster creativity and critical thinking, and cultivate a diverse and inclusive learning community.</p>
+
+        <h2>Motto</h2>
+        <p>"Inspiring Minds, Empowering Futures"</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Brilliance Visionary Hub. All rights reserved. | Developed by Aysha Thikra</p>
+    </footer>
+</body>
+</html>
